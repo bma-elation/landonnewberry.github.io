@@ -7,14 +7,29 @@ An Astro + Tailwind CSS starter kit for landing pages.
 ## Quick Start
 
 ```
-# install dependencies
+# 1. install VS Code Astro extension
+
+# 2. work on latest develop
+git checkout develop
+git pull
+
+# 3. install dependencies
 npm install
 
-# run local dev build w/ file watch
+# 4. run local dev build w/ file watch
 npm run dev
 
-# build static site to `dist/*`
+# 5. make some updates, etc.
+# update splash image(s) in `splash-image.astro`
+# update schedule JSON in `schedule.astro`
+
+# 6. build static site to `dist/*`
 npm run build
+
+# 7. copy `dist/*` to `master` branch
+npx gh-pages --dist dist --branch master
+
+# 8. push master branch to origin to deploy!
 ```
 
 ## Features
