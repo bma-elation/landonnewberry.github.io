@@ -26,10 +26,10 @@ npm run dev
 # 6. build static site to `dist/*`
 npm run build
 
-# 7. copy `dist/*` to `master` branch
+# 7. deploy `dist/*` to remote `master` branch
 npx gh-pages --dist dist --branch master
 
-# 8. push master branch to origin to deploy!
+# 8. open PR to merge to master (if working off a fork!)
 ```
 
 ## Features

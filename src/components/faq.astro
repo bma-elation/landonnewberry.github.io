@@ -1,83 +1,70 @@
 ---
 import ContentSection from "~/components/content-section.astro";
-import CompatibilityList from "~/components/compatibility-list.astro";
-
-const frameworks = [
-  {
-    title: "React",
-    icon: "frameworks/react",
-    url: "https://reactjs.org/",
-  },
-  {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
-  },
-  {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
-  },
-  {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
-  },
-  {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
-  },
-];
-
-const platforms = [
-  {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
-  },
-  {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
-  },
-  {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
-  },
-  {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
-  },
-  {
-    title: "GitHub",
-    icon: "fa-brands:github",
-    url: "https://pages.github.com/",
-  },
-  {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
-  },
-];
 ---
 
 <ContentSection title="Resources" id="resources">
   <Fragment slot="lead">
-    Have a <a class="underline" href="" target="_blank">question</a>? Check the <a
-      class="underline"
-      href="https://docs.google.com/document/d/16meV6bb81gb2OHbEQkDZPuSZQZO2kv_fMXYgXOAW0iA/edit#heading=h.rgvuwy1d8oio"
-      target="_blank">FAQ</a
-    >. Hangout in <a class="underline" href="" target="_blank">Slack</a> or catch
-    a <a class="underline" href="https://www.lyft.com/rider" target="_blank"
-      >Lyft</a
-    >!
+    <ul class="text-lg">
+      <li>
+        🤝 Meet your <a
+          class="underline"
+          href="https://elationhealth.atlassian.net/wiki/spaces/PROD/pages/2369028358/Hackathon+2022+-+Teams+Projects"
+          rel="noopener noreferrer"
+          target="_blank">Teams & Projects</a
+        >!
+      </li>
+      <li>
+        👉 Check the <a
+          class="underline"
+          href="https://docs.google.com/document/d/16meV6bb81gb2OHbEQkDZPuSZQZO2kv_fMXYgXOAW0iA/edit#heading=h.rgvuwy1d8oio"
+          rel="noopener noreferrer"
+          target="_blank">FAQ</a
+        >.
+      </li>
+      <li>
+        🙋 Ask a question in <a
+          class="underline"
+          href="https://elation.slack.com/archives/C02SJT5DN03"
+          rel="noopener noreferrer"
+          target="_blank">#temp_hackathon_2022</a
+        >?
+      </li>
+      <li>
+        🎉 Hangout in <a
+          class="underline"
+          href="https://elation.slack.com/archives/C04BE0RMJ"
+          rel="noopener noreferrer"
+          target="_blank">#team_proddev</a
+        >!
+      </li>
+      <li>
+        🚀 Catch a <a
+          class="underline"
+          href="https://www.lyft.com/rider"
+          rel="noopener noreferrer"
+          target="_blank">Lyft</a
+        >!
+      </li>
+    </ul>
+    <br /><br /><br />
+    <a
+      id="scavenger-hunt-link"
+      class="opacity-25 text-xs"
+      href="/scavenger_hunt">🦛</a
+    >
+    <script>
+      const el = document.getElementById("scavenger-hunt-link");
+      if (el) {
+        el.addEventListener("click", (e: MouseEvent) => {
+          e.preventDefault();
+          e.stopPropagation();
+          window.open(
+            "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "_blank",
+            "noopener noreferrer"
+          );
+        });
+      }
+    </script>
   </Fragment>
 </ContentSection>
