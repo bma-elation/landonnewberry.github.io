@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "clean": "rimraf dist node_modules"
+    "clean": "rimraf dist node_modules",
+    "deploy": "astro build && gh-pages --dist dist --branch master"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^1.0.0",
