@@ -25,7 +25,7 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
   <div class="absolute">
     <SplashImage />
   </div>
-  <div class="relative grid h-full sm:grid-cols-1 place-items-center">
+  <div class="relative grid h-full grid-cols-1 place-items-center">
     <div class="flex flex-col items-center gap-4 content-center">
       <picture class="filter-vibrant-400">
         <source type="image/webp" srcset={webpSrcset} sizes={sizes} />
@@ -40,7 +40,7 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
       </picture>
       <div class="self:center">
         <div
-          class="relative font-extrabold tracking-tighter text-center text-2xl md:text-2xl text-white whitespace-nowrap drop-shadow-hard"
+          class="relative font-extrabold tracking-tighter text-center text-xl md:text-2xl text-white whitespace-nowrap drop-shadow-hard"
         >
           September 19th - 23rd, 2022
           <br />

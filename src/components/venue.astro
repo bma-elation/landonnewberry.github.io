@@ -1,7 +1,5 @@
 ---
 import ContentSection from "~/components/content-section.astro";
-import ShowcaseCard from "~/components/showcase-card.astro";
-import sites from "~/data/showcase/sites.json";
 ---
 
 <ContentSection title="Venue" id="venue">
@@ -11,17 +9,16 @@ import sites from "~/data/showcase/sites.json";
       target="_blank"
       >Los Angeles Airport Marriott
     </a>
-
     <br />
     <a
-      class="text-lg"
+      class="text-base"
       href="https://goo.gl/maps/EXWdUFLcrGkjUH3ZA"
       target="_blank">5855 W Century Blvd, Los Angeles, CA 90045</a
     >
     <br />
-    <a class="text-lg" href="tel:+13106415700">+1 310-641-5700</a>
+    <a class="text-base" href="tel:+13106415700">+1 310-641-5700</a>
     <br />
-    <span class="text-lg"
+    <span class="text-base"
       >Check-in: <span class="text-primary">3pm</span>, Check-out: <span
         class="text-primary">11am</span
       >
@@ -37,8 +34,8 @@ import sites from "~/data/showcase/sites.json";
       <div class="gmap_canvas">
         <iframe
           class="m-auto"
-          width="500"
-          height="400"
+          width="320"
+          height="320"
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=5855%20W%20Century%20Blvd,%20Los%20Angeles,%20CA%2090045&t=&z=13&ie=UTF8&iwloc=&output=embed"
           frameborder="0"
@@ -48,15 +45,15 @@ import sites from "~/data/showcase/sites.json";
           .mapouter {
             position: relative;
             text-align: right;
-            height: 400px;
-            width: 500px;
+            height: 320px;
+            width: 320px;
           }
         </style><style>
           .gmap_canvas {
             overflow: hidden;
             background: none !important;
-            height: 400px;
-            width: 500px;
+            height: 320px;
+            width: 320px;
           }
         </style>
       </div>
